@@ -8,6 +8,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -44,10 +45,16 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          Written by <strong>{author.name}</strong> <br/> {author?.summary || null}
+          <br/>
+          <Link to="/about-me">About me</Link>
           {` `}
           <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
+            Twitter
+          </a>
+          {` `}
+          <a href={`https://github.com/${social?.github || ``}`}>
+            GitHub
           </a>
         </p>
       )}
