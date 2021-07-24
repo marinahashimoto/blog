@@ -3,13 +3,12 @@ module.exports = {
     title: `Hashimoto's Blog`,
     author: {
       name: `Marina Hashimoto`,
-      summary: `関西在住のiOS, React Nativeエンジニア`
+      summary: `iOS, React Nativeエンジニア`,
     },
     description: `モバイルアプリ開発を通じて、日々学んだことなどを書き留めていきます`,
     siteUrl: `https://marinahashimoto.github.io/hashimoto-blog`,
     social: {
       twitter: `_mhashimoto`,
-      github: `marinahashimoto`,
     },
   },
   plugins: [
@@ -124,6 +123,7 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-fontawesome-css`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
