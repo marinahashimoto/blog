@@ -50,11 +50,8 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by{" "}
-          <Link to="/about-me">
-            <strong>{author.name}</strong>
-          </Link>{" "}
-          <br /> {author?.summary || null}
+          Written by <strong>{author.name}</strong> <br />{" "}
+          {author?.summary || null}
           <br />
           <a href={`https://twitter.com/${social?.twitter || ``}`}>
             <FontAwesomeIcon icon={["fab", "twitter"]} />
