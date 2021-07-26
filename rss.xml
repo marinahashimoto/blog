@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Hashimoto's Blog]]></title><description><![CDATA[モバイルアプリ開発を通じて、日々学んだことなどを書き留めていきます]]></description><link>https://marinahashimoto.github.io/hashimoto-blog</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Jul 2021 15:06:31 GMT</lastBuildDate><item><title><![CDATA[Gatsby + GitHub Pages + GitHub Actions で個人ブログを作った]]></title><description><![CDATA[なぜ作ろうと思ったか アウトプット三日坊主を克服したいと思い立ち、ブログを作りました。 技術でも日常のことでも自由に書ける空間がとりあえず欲しかったので、個人ブログを立ち上げてみることにしました。 なぜ Gatsby を選んだか Gatsby は React ベースの SSG…]]></description><link>https://marinahashimoto.github.io/hashimoto-blog/2021-07-25-create-blog-by-gatsby/</link><guid isPermaLink="false">https://marinahashimoto.github.io/hashimoto-blog/2021-07-25-create-blog-by-gatsby/</guid><pubDate>Sun, 25 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;なぜ作ろうと思ったか&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Hashimoto's Blog]]></title><description><![CDATA[I'll be writing down what I've learned through app development on a daily basis.]]></description><link>https://marinahashimoto.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 26 Jul 2021 12:23:46 GMT</lastBuildDate><item><title><![CDATA[Gatsby + GitHub Pages + GitHub Actions で個人ブログを作った]]></title><description><![CDATA[なぜ Gatsby でブログを作ろうと思ったか アウトプット三日坊主を克服したいと思い立ち、ブログを作りました。 技術でも日常のことでも自由に書ける空間がとりあえず欲しかったので、個人ブログを立ち上げてみることにしました。 Gatsby は React ベースの SSG…]]></description><link>https://marinahashimoto.github.io/2021-07-25-create-blog-by-gatsby/</link><guid isPermaLink="false">https://marinahashimoto.github.io/2021-07-25-create-blog-by-gatsby/</guid><pubDate>Sun, 25 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;なぜ Gatsby でブログを作ろうと思ったか&lt;/h2&gt;
 &lt;p&gt;アウトプット三日坊主を克服したいと思い立ち、ブログを作りました。&lt;/p&gt;
 &lt;p&gt;技術でも日常のことでも自由に書ける空間がとりあえず欲しかったので、個人ブログを立ち上げてみることにしました。&lt;/p&gt;
-&lt;h2&gt;なぜ Gatsby を選んだか&lt;/h2&gt;
-&lt;p&gt;Gatsby は React ベースの SSG(静的サイトジェネレータ)フレームワークです。&lt;/p&gt;
+&lt;p&gt;Gatsby は React ベースの SSG(静的サイトジェネレータ)フレームワークだそう。&lt;br&gt;
+データ取得まわりは GrahphQL を採用しているようです。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.com/&quot;&gt;Gatsby 公式サイト&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;最近業務で React Native を触り始めたので、React を勉強しつつ色々カスタマイズできたらいいなと思い、Gatsby を選択しました。&lt;/p&gt;
+&lt;p&gt;最近業務で React Native + GraphQL でアプリ開発をしているので、勉強しつつ色々カスタマイズできたらいいなと思い Gatsby を選択しました。&lt;/p&gt;
+&lt;p&gt;トータル 2 時間ぐらいで手軽に作成して公開できたので、メモ書き程度に手順を残しておきます。&lt;/p&gt;
 &lt;h2&gt;作成手順&lt;/h2&gt;
 &lt;h3&gt;ローカルにプロジェクトを作成&lt;/h3&gt;
 &lt;ul&gt;
@@ -151,15 +152,16 @@ $ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push origin &lt;
         trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;まとめ&lt;/h2&gt;
-&lt;p&gt;Gatsby でのブログ作成、トータル 2 時間ぐらいで作れてお手軽でした。
-css、独自ドメインなどのカスタマイズは追々やっていきたい所存です。タグ表示とかしたいな。&lt;/p&gt;
+&lt;h2&gt;感想&lt;/h2&gt;
+&lt;p&gt;Gatsby でのブログ作成、さくっと作れたのが良かったです。&lt;br&gt;
+プラグインも豊富そうなので、自分好みのブログにしようとすると、どんどん時間が溶けていきそう…&lt;br&gt;
+いま実務だとあまり Web フロントの開発をすることが無いので、ぼちぼち勉強も兼ねてカスタマイズしていきたいです。&lt;/p&gt;
 &lt;h2&gt;Reference list&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://zenn.dev/tossy_yukky/articles/3681a314b3f6ef86a4cf&quot;&gt;Gatsby と Netlify（と AWS Route53）を使って 30 分でブログを作る&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://suzukalight.com/blog/posts/2019-06-29-hello-world&quot;&gt;Gatsby + GitHub Pages でブログを構築&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://qiita.com/peaceiris/items/2f6d83802f2aefa66f9d&quot;&gt;Gatsby のサイトを GitHub Actions で GitHub Pages にデプロイ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[About me]]></title><link>https://marinahashimoto.github.io/hashimoto-blog/about-me/</link><guid isPermaLink="false">https://marinahashimoto.github.io/hashimoto-blog/about-me/</guid><pubDate>Sat, 24 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[About me]]></title><link>https://marinahashimoto.github.io/about-me/</link><guid isPermaLink="false">https://marinahashimoto.github.io/about-me/</guid><pubDate>Sat, 24 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Marina Hashimoto&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;work&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;モバイルアプリ開発(3年)&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Webアプリ開発(1年)&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;language&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;swift&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;React Native&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;JS&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;TS&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;PHP&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
