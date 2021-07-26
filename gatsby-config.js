@@ -3,13 +3,15 @@ module.exports = {
     title: `Hashimoto's Blog`,
     author: {
       name: `Marina Hashimoto`,
-      summary: `iOS, React Nativeエンジニア`,
+      summary: `iOS, React Native Developer`,
     },
-    description: `モバイルアプリ開発を通じて、日々学んだことなどを書き留めていきます`,
-    siteUrl: `https://marinahashimoto.github.io/hashimoto-blog`,
+    description: `I'll be writing down what I've learned through app development on a daily basis.`,
+    siteUrl: `https://marinahashimoto.github.io`,
     social: {
       twitter: `_mhashimoto`,
+      github: `marinahashimoto`,
     },
+    imagePath: `/icons/icon-512x512.png`,
   },
   plugins: [
     `gatsby-plugin-image`,

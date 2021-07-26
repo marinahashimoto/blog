@@ -26,6 +26,7 @@ const Bio = () => {
           }
           social {
             twitter
+            github
           }
         }
       }
@@ -60,7 +61,7 @@ const Bio = () => {
             <FontAwesomeIcon icon={["fab", "twitter"]} />
           </a>
           {` `}
-          <a href={`https://github.com/marinahashimoto`}>
+          <a href={`https://github.com/${social?.github}`}>
             <FontAwesomeIcon icon={["fab", "github"]} />
           </a>
         </p>
