@@ -1,7 +1,7 @@
 ---
 title: Gatsby + GitHub Pages + GitHub Actions で個人ブログを作った
 date: "2021-07-25T00:00:00.000Z"
-tag: ["gatsby", "github pages", "github actions"]
+tags: ["gatsby", "github pages", "github actions"]
 ---
 
 ## なぜ Gatsby でブログを作ろうと思ったか
